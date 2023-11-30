@@ -1,3 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<style>
+		body {
+		  background-size: cover;
+		}
+	</style>
+</head>
+<body>
+
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #005290;
@@ -13,8 +26,10 @@
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
-
-		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+		embedded_svc.settings.chatbotAvatarImgURL='https://hunterfiber.my.site.com/resource/HunterAvatarLogo';
+		embedded_svc.settings.avatarImgURL = "https://hunterfiber.my.site.com/resource/HunterAvatarLogo";
+		
+		embedded_svc.settings.defaultMinimizedText = 'Let\'s Chat'; //(Defaults to Chat with an Expert)
 		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
 
 		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
@@ -60,3 +75,5 @@
 		initESW('https://service.force.com');
 	}
 </script>
+</body>
+</html>
